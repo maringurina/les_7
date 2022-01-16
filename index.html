@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets /style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./index.html">
+                <img src="./imgs/2022-01-15 10.24.22.jpg">
+            </a>
+            
+            <button class="btn"купить></button>
+        </div>
+        <div class="main">
+                <div class='item'>
+                    <img src="./imgs/2022-01-15 10.25.32.jpg" alt="foto">
+                    <p class="text">Lorem ipsum dolor sit amet</p>
+                    <button class="btn" купить></button>
+                </div>
+                <div class='item'>
+                    <img src="./imgs/2022-01-15 10.25.32.jpg" alt="foto">
+                    <p class="text">Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eligendi eum? Sed veniam, aliquam aspernatur amet soluta ea impedit eaque nesciunt pariatur provident quasi eligendi nobis repellendus reprehenderit dolore nihil?</p>
+                    <button class="btn" купить></button>
+                </div>
+                <div class='item'>
+                    <img src="./imgs/2022-01-15 10.25.32.jpg" alt="foto">
+                    <p class="text">Lorem ipsum dolor sit ametlorem lorem, consectetur adipisicing</p>
+                    <button class="btn" купить></button>
+                </div>
+
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>
+
+        </div>
+
+        <div class="grid-container2">
+            <div class="grid-item1">11</div>
+            <div class="grid-item2">22</div>
+            <div class="grid-item3">33</div>
+            <div class="grid-item4">44</div>
+        </div>
+        <p>lorem ipsum dolor sit amet, consectet lorem</p>
+
+        <div class="container2">
+            <div class=cube>
+                
+            </div>
+        
+        </div>
+
+
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide">Slide 1
+                <img src="./imgs/2022-01-15 10.25.32.jpg" alt="">
+            </div>
+            <div class="swiper-slide">Slide 2
+                <img src="./imgs/2022-01-15 10.25.32.jpg" alt="">
+            </div>
+            <div class="swiper-slide">Slide 3
+                <img src="./imgs/2022-01-15 10.25.32.jpg" alt="">
+            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div id="test">текст
+        
+    </div>
+
+    <script>
+        console.log('Hello world');
+        alert('Hello world');
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        //direction: 'vertical',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        });
+
+        let str;
+        str = 'текст';
+        console.log(str);
+        str='new текст';
+        console.log(str);
+
+        let t=document.getElementById('test');
+        let text=t.innerHTML='sun';
+        console.log(str);
+        console.log(t);
+
+        
+
+
+
+    </script>
+
+</body>
+</html>
